@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="/style/stylesheet.css"></li>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<h1>User:</h1>
+		<h3>Name: <%= data.name %></h3>
+		<h3>Dojo Location:  <%= data.location %></h3>
+		<h3>Favoriot Laungage:  <%= data.language %></h3>
+		<p>Comment: <%= data.comment %></p>
+		<form action='/'>    	
+			<input type="submit" name="back" value="Go Back">
+		</form>
+
+	</body>
+</html>
