@@ -1,0 +1,14 @@
+
+<div ng-controller = 'loginController'>
+<fieldset><legend>User Login</legend>
+  <a href="#/">Login</a> | <a href="#/register">Registration</a>
+  <form ng-model = "userLogin" ng-submit = "login()">
+    {{errors.login_reg.message}}
+    <label>Email<input type="email"  ng-model = "userLogin.email" placeholder= "email"></label>
+    <br>
+    <label>Password<input type="password"  ng-model = "userLogin.password" placeholder= "password"></label>
+
+    <input type="submit" value = "login">
+  </form>
+</fieldset>
+</div>

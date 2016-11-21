@@ -1,0 +1,32 @@
+
+<div ng-controller = 'mainController'>
+  <fieldset id="header"><legend>Hope you feel better soon!</legend>
+    <h1>Doctor's appoinment log.</h1>
+    Welcome: {{mC.loggedInUser}} | <a href="#/">Logout</a>
+  </fieldset>
+  <h1>New Appointment</h1>
+  <br>
+
+  <form  name="appointmentForm" method="post">
+
+    <label>Appointment Date in the future <input type="date" name="date" ng-model="appt.date" min="datetime-local" value="" required></label>
+      <div ng-messages="appointmentForm.date.$error">
+         <p ng-message="min">Appointment date must be in the future.</p>
+         <p ng-message="required">Appointment date is required.</p>
+      </div>
+    <label>Appointment Time 8:00AM - 5:00PM <input type="time" name="time" ng-model="appt.time" value="" min="08:00" max="17:00" required></label>
+      <div ng-messages="appointmentForm.time.$error">
+        <p ng-message="min">Appointment time should be between 8:00AM - 5:00PM.</p>
+         <p ng-message="max">Appointment time should be between 8:00AM - 5:00PM.</p>
+         <p ng-message="required">Appointment time is required.</p>
+      </div>
+    <label>Complaint <textarea name="complaint" ng-model="appt.complaint" rows="8" cols="40" ng-minlength='10' required></textarea></label>
+      <div ng-messages="appointmentForm.complaint.$error">
+         <p ng-message="minlength">The complaint must be at least 10 characters.</p>
+         <p ng-message="required">The complaint is required.</p>
+      </div>
+    <input type="submit" name="name"  ng-click="create()" value="Add appoinment">
+
+  </form>
+  <a class="cancel" href="#/main">Cancel</a>
+</div>

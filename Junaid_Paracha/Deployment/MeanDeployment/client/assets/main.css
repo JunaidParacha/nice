@@ -1,0 +1,97 @@
+* {
+  /*border:0;*/
+  margin:0;
+}
+body {
+  width: 800px;
+  margin: auto;
+}
+label {
+  display: block;
+  color: darkblue;
+  font-weight: bold;
+
+}
+fieldset {
+  width: 300px;
+  text-align: right;
+}
+ul, form{
+  width: 740px;
+  margin: 20 auto 20 auto;;
+  text-align: left;
+  /*border-top: 1px solid gray;*/
+  padding: 10;
+
+}
+textarea {
+  width: 640px;
+  margin: auto;
+
+}
+li {
+  list-style-type: none;
+  width: auto;
+}
+button {
+  background-color: darkblue;
+  color: white;
+  margin-left: 200px;
+}
+h1 {
+  text-align: left;
+  vertical-align: top;
+}
+fieldset {
+  width: 50%;
+}
+
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  margin: 8px 8px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  background-color: darkblue;
+  color: white;
+}
+
+#header {
+  width: 100%;
+}
+legend {
+  text-align: center;
+  color: darkblue;
+}
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: auto;
+}
+th,td {
+  width: 200px;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.cancel {
+  display: block;
+  box-sizing: border-box;
+  background-color: darkblue;
+  color: white;
+  margin: auto;
+  padding: 12px 50px;
+  box-sizing: border-box;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+}
+div [ng-messages] {
+  color: red;
+}
