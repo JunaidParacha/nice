@@ -1,5 +1,0 @@
-var mathlib = require('./mathlib')()
-mathlib.add(5,6)
-mathlib.multiply(9,10)
-mathlib.square(5)
-mathlib.random(3,55)
